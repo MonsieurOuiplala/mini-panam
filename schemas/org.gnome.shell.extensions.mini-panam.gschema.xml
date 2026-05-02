@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.mini-panam" path="/org/gnome/shell/extensions/mini-panam/">
+    <key name="stop-id" type="s">
+      <default>''</default>
+      <summary>Stop ID pour PRIM</summary>
+    </key>
+    <key name="token-prim" type="s">
+      <default>''</default>
+      <summary>Token PRIM</summary>
+    </key>
+  </schema>
+</schemalist>

@@ -1,0 +1,7 @@
+{
+  "uuid": "mini-panam@monsieur_ouiplala",
+  "name": "Mini-PANAM",
+  "description": "Affiche les deux prochaines arrivées de Métropolitain/RER/Tramway/Transilien/Bus du réseau de transports en commun d'Île-de-France, récupéré sur l'API PRIM",
+  "version": 0,
+  "shell-version": ["45", "46", "47", "48"]
+}
