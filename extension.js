@@ -80,7 +80,7 @@ var MiniPANAM=GObject.registerClass(class MiniPANAM extends PanelMenu.Button{
         this.menu.addMenuItem(this._info);
     }
     _majInfo(){
-        if(this._err)this._info.label.text="Erreur: "+this._err;
+        if(this._err)this._info.label.text="Erreur : "+this._err;
         else if(this._nomArr&&this._dir){
             let t=`${this._nomArr} → ${this._dir}`;
             if(t.length>40)t=t.substring(0,37)+"...";
