@@ -19,7 +19,7 @@ sudo cp ~/.local/share/gnome-shell/extensions/mini-panam@monsieur_ouiplala/schem
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 gnome-extensions enable mini-panam@monsieur_ouiplala``
 
-Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Wayland) ou déconnectez-vous.
+Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Xorg) ou déconnectez-vous.
 
 ### GNOME 49-50
 
@@ -31,7 +31,7 @@ sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
 glib-compile-schemas ~/.local/share/glib-2.0/schemas/
 gnome-extensions enable mini-panam@monsieur_ouiplala``
 
-Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Wayland) ou déconnectez-vous.
+Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Xorg) ou déconnectez-vous.
 
 ## Configuration
 - Cliquez sur l'icône -- | -- dans la barre supérieure (**l'icône est très transparente, presque invisible en luminosité réduite !**)
