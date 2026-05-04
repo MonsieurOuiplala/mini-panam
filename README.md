@@ -1,4 +1,4 @@
-# mini-panam v0
+# mini-panam
 
 Extension GNOME Shell qui affiche les deux prochaines arrivées de métro, RER, tramway, Transilien ou bus du réseau de transports en commun d'Île-de-France, récupérées via l'API PRIM d'Île-de-France Mobilités.
 
