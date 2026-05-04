@@ -1,5 +1,6 @@
 # mini-panam
-Extension GNOME Shell qui affiche les deux prochaines arrivées de Métropolitain/RER/Tramway/Transilien/Bus du réseau de transports en commun d'Île-de-France, récupéré sur l'API PRIM d'Île-de-France Mobilités
+
+Extension GNOME Shell qui affiche les deux prochaines arrivées de métro, RER, tramway, Transilien ou bus du réseau de transports en commun d'Île-de-France, récupérées via l'API PRIM d'Île-de-France Mobilités.
 
 ## Fonctionnalités
 
@@ -11,18 +12,29 @@ Extension GNOME Shell qui affiche les deux prochaines arrivées de Métropolitai
 
 ## Installation
 
-1. Déplacez l'extension dans le dossier GNOME Shell : ``mv mini-panam@monsieur_ouiplala ~/.local/share/gnome-shell/extensions/``
-2. Copiez et compilez le schéma GSettings (système + utilisateur) :
-   ``sudo cp ~/.local/share/gnome-shell/extensions/mini-panam@monsieur_ouiplala/schemas/*.gschema.xml /usr/share/glib-2.0/schemas/
+### GNOME 45-48
+
+``mv mini-panam@monsieur_ouiplala ~/.local/share/gnome-shell/extensions/
+sudo cp ~/.local/share/gnome-shell/extensions/mini-panam@monsieur_ouiplala/schemas/*.gschema.xml /usr/share/glib-2.0/schemas/
+sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
+gnome-extensions enable mini-panam@monsieur_ouiplala``
+
+Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Wayland) ou déconnectez-vous.
+
+### GNOME 49-50
+
+``mv mini-panam@monsieur_ouiplala ~/.local/share/gnome-shell/extensions/
+sudo cp ~/.local/share/gnome-shell/extensions/mini-panam@monsieur_ouiplala/schemas/*.gschema.xml /usr/share/glib-2.0/schemas/
 mkdir -p ~/.local/share/glib-2.0/schemas/
 cp ~/.local/share/gnome-shell/extensions/mini-panam@monsieur_ouiplala/schemas/*.gschema.xml ~/.local/share/glib-2.0/schemas/
 sudo glib-compile-schemas /usr/share/glib-2.0/schemas/
-glib-compile-schemas ~/.local/share/glib-2.0/schemas/``
-3. Activez l'extension : ``gnome-extensions enable mini-panam@monsieur_ouiplala``
-4. Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Wayland) ou votre session.
+glib-compile-schemas ~/.local/share/glib-2.0/schemas/
+gnome-extensions enable mini-panam@monsieur_ouiplala``
+
+Redémarrez GNOME Shell (Alt+F2 -> ``r`` -> Entrée sous Wayland) ou déconnectez-vous.
 
 ## Configuration
-- Cliquez sur l'icône -- | -- dans la barre supérieure
+- Cliquez sur l'icône -- | -- dans la barre supérieure (**l'icône est très transparente, presque invisible en luminosité réduite !**)
 - Entrez l'ID de votre arrêt (plus d'informations en cliquant sur l'icône ``?`` à côté du champ de texte)
 - (Optionnel) Entrez votre token PRIM personnel
 
